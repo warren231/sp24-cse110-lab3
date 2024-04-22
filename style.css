@@ -1,4 +1,23 @@
+* {
+    --my-red: #c21a00;
+}
 #meeting-title { /* Edit the meeting title to be wavy and centered. Partial color style is done inline on the HTML. */
-    text-decoration: wavy;
+    text-decoration: wavy overline underline;
     text-align: center;
+}
+
+details li {
+    background-color: rgb(200 240 220 / 30%);
+}
+
+h2, h3 {
+    color: var(--my-red, red);
+}
+
+hr {
+    color: hsl(193, 100%, 77%);
+}
+
+.violet {
+    color: color-mix(in srgb, #8139a7 70%, #fff);
 }
