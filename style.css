@@ -14,8 +14,36 @@ h2, h3 {
     color: var(--my-red, red);
 }
 
+h2 {
+    padding: 2% 4% 2% 1%;
+    border-style: dashed;
+    border-color: black;
+    border-width: 2px;
+}
 hr {
     color: hsl(193, 100%, 77%);
+}
+
+h2 ~ * {
+    margin-left: 2em;
+}
+
+br + button, label + select {
+    background-color: #e9d3ff;
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+}
+
+form.position-1 {
+    position: sticky;
+    width: 25em;
 }
 
 .violet {

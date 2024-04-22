@@ -12,21 +12,23 @@
         border-style: groove;
         border-width: 1vw;
         margin: 10px 10pc 10ch 10rem;
+        position: sticky;
+        top: 0;
+        background-color: rgb(255 255 255 / 70%);
       }
     </style>
   </head>
   <body>
+    <nav>
+      <div>
+        <ul>
+          <li><a href="#meeting-title">How</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#fill-this">Form</a></li>
+        </ul>
+      </div>
+    </nav>
     <header>
-      <nav>
-        <div>
-          <ul>
-            <li><a href="#meeting-title">How</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#fill-this">Form</a></li>
-          </ul>
-        </div>
-      </nav>
-
       <h1 id="meeting-title">How how how how <span style="color: color(xyz-d65 0.3702 0.4815 0.5181);"><i>HOW HWO HOW</i></span></h1>
       <h2>why why why why</h2>
       <h3>4/14/2023</h3>
@@ -74,7 +76,7 @@
 
     <footer>
       <h2 id="fill-this">Final Form</h2>
-      <form>
+      <form class="position-1">
         <fieldset>
           <legend>What is a polar bear doing in Arlington Texas</legend>
           <input type="radio" id="sob" name="emoji" value=":sob:">
