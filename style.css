@@ -1,0 +1,4 @@
+#meeting-title { /* Edit the meeting title to be wavy and centered. Partial color style is done inline on the HTML. */
+    text-decoration: wavy;
+    text-align: center;
+}
