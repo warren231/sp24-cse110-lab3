@@ -1,3 +1,1 @@
-# Lab 2 - Starter
-
-https://warren231.github.io/CSE110_Lab2_Starter/
+warren231.github.io/sp24-cse110-lab3
