@@ -84,22 +84,23 @@ ul {
     display: flex;
     justify-content: center;
     width: 15em;
-    @media (max-width: 800px) {
-        width: 100%;
-    }
 }
 
-.last {
-    @media (max-width: 800px) {
+@media (max-width: 800px) {
+    ul {
+        width: 100%;
+    }
+    .last {
         display: none;
     }
 }
+
 section > div {
     display: grid;
     grid-template-columns: 10fr 10fr;
     grid-template-rows: auto;
     
-    * {
+    * { /* nested selector, affects descendents of the div */
         grid-column: 1 / 4;
         justify-self: left;
         align-self: center;
