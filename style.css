@@ -1,12 +1,13 @@
 * {
-    --my-red: #c21a00;
+    --my-red: #c21a00; /* setting a variable for red */
 }
-#meeting-title { /* Edit the meeting title to be wavy and centered. Partial color style is done inline on the HTML. */
+
+#meeting-title { /* Edit the meeting title to be centered, and have wavy lines. Partial color style is done inline on the HTML. */
     text-decoration: wavy overline underline;
     text-align: center;
 }
 
-details li {
+details li:has(~ *) { /* Adds a background color to list items that have a subsequent sibling in a details tag*/
     background-color: rgb(200 240 220 / 30%);
 }
 
@@ -24,11 +25,11 @@ hr {
     color: hsl(193, 100%, 77%);
 }
 
-h2 ~ * {
+h2 ~ * { /* affects all subsequent siblings of h2, and doesn't include h2*/
     margin-left: 2em;
 }
 
-br + button, label + select {
+br + button, label + select { /* affects buttons adjacent to br, and select tags adjacent to label */
     background-color: #e9d3ff;
     border: none;
     padding-top: 0.5em;
@@ -39,10 +40,20 @@ br + button, label + select {
     margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 0.4em;
+    &:hover { /* affects the given element on hover */
+        background-color: #ce9dff;
+    }
+}
+
+input[value] {
+    background-color: #ffdfda;
+}
+input:active, textarea:active {
+    background-color: #ce9dff;
 }
 
 form.position-1 {
-    position: sticky;
+    position: absolute;
     width: 25em;
 }
 
