@@ -11,10 +11,19 @@
         border-color: blueviolet;
         border-style: groove;
         border-width: 1vw;
-        margin: 10px 10pc 10ch 10rem;
+        margin: 0px 1pc 1ch 0rem;
         position: sticky;
         top: 0;
         background-color: rgb(255 255 255 / 70%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 10px;
+        min-width: 80%;
+        max-height: 3em;
+        li {
+          display: inline;
+        }
       }
     </style>
   </head>
@@ -27,11 +36,26 @@
           <li><a href="#fill-this">Form</a></li>
         </ul>
       </div>
+      <div>
+        <ul>
+          <li><a href="#meeting-title">How</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#fill-this">Form</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="last">
+          <li><a href="#meeting-title">How</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#fill-this">Form</a></li>
+        </ul>
+      </div>
     </nav>
     <header>
       <h1 id="meeting-title">How how how how <span style="color: color(xyz-d65 0.3702 0.4815 0.5181);"><i>HOW HWO HOW</i></span></h1>
       <h2>why why why why</h2>
       <h3>4/14/2023</h3>
+      <hide>you shouldn't see this</hide>
     </header>
 
     <main>
@@ -45,24 +69,28 @@
             <li>3 (<em>much</em> less important than lackey)</li>
           </ol>
         </details>
-        <h3>Agenda</h3>
+        <div>
+          <h3>Agenda</h3>
         <p>
           too many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many items
         </p>
         <h3>Unfinished Business</h3>
-        <p class="violet">
-          too many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many items
-        </p>
-        <hr>
-        <p>
-          too many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many items
-        </p>
-        <hr>
-        <p class="violet">
-          too many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many items
-        </p>
-        <h3>New Business</h3>
-        <p>Lackey just destroyed some workers' livelihoods :D</p>
+        <div style="margin: 0%;">
+          <p class="violet">
+            too many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many items
+          </p>
+          <hr>
+          <p>
+            too many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many items
+          </p>
+          <hr>
+          <p class="violet">
+            too many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many itemstoo many things to type out, so many items
+          </p>
+        </div>
+        <h3 class="one-col">New Business</h3>
+        <p class="one-col">Lackey just destroyed some workers' livelihoods :D</p>
+        </div>
       </section>
       <section>
         <h2 id="media">Media</h2>

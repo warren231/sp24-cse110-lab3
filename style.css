@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
     --my-red: #c21a00; /* setting a variable for red */
+    font-family: "Lora", serif;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #meeting-title { /* Edit the meeting title to be centered, and have wavy lines. Partial color style is done inline on the HTML. */
     text-decoration: wavy overline underline;
     text-align: center;
+    font-size: 5em;
 }
 
 details li:has(~ *) { /* Adds a background color to list items that have a subsequent sibling in a details tag*/
@@ -20,13 +26,16 @@ h2 {
     border-style: dashed;
     border-color: black;
     border-width: 2px;
+    min-width: 10%;
+    max-width: 100%;
 }
+
 hr {
     color: hsl(193, 100%, 77%);
 }
 
 h2 ~ * { /* affects all subsequent siblings of h2, and doesn't include h2*/
-    margin-left: 2em;
+    margin-left: 4em;
 }
 
 br + button, label + select { /* affects buttons adjacent to br, and select tags adjacent to label */
@@ -52,11 +61,55 @@ input:active, textarea:active {
     background-color: #ce9dff;
 }
 
+textarea#explanation {
+    width: 30em;
+    height: 20em;
+}
+
 form.position-1 {
     position: absolute;
-    width: 25em;
+    width: 35em;
 }
 
 .violet {
     color: color-mix(in srgb, #8139a7 70%, #fff);
+}
+
+hide {
+    display: none;
+}
+
+ul {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    width: 15em;
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.last {
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+section > div {
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+    grid-template-rows: auto;
+    
+    * {
+        grid-column: 1 / 4;
+        justify-self: left;
+        align-self: center;
+    }
+
+    .one-col {
+        grid-column: 1;
+    }
+
+    p.one-col {
+        grid-column: 2;
+    }
 }
