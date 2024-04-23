@@ -99,18 +99,18 @@ section > div {
     display: grid;
     grid-template-columns: 10fr 10fr;
     grid-template-rows: auto;
-    
-    * { /* nested selector, affects descendents of the div */
-        grid-column: 1 / 4;
-        justify-self: left;
-        align-self: center;
-    }
 
-    .one-col {
-        grid-column: 1;
-    }
-
-    p.one-col {
+    & p.one-col {
         grid-column: 2;
     }
+}
+
+section > div * {
+    grid-column: 1 / 4;
+    justify-self: left;
+    align-self: center;
+}
+
+section > div .one-col {
+    grid-column: 1;
 }
